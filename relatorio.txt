@@ -1,0 +1,48 @@
+Relatório Técnico
+
+Projeto: Sistema IoT para Gestão de Pedidos em Estabelecimentos de Alimentação
+
+Grupo: Alessandro, Kauã
+
+Objetivo do Projeto
+
+Desenvolver um sistema integrado de pedidos para estabelecimentos do ramo de alimentação, utilizando tecnologias IoT e Web. O sistema permite o envio de pedidos via aplicativo em dispositivos móveis, processamento por microcontrolador ESP32, impressão em impressora térmica e acompanhamento por uma plataforma web responsiva.
+
+Componentes do Sistema
+
+O sistema é composto por três partes principais:
+
+Aplicativo de Pedidos (IoT MQTT Panel - Android)
+
+Módulo de Impressão (ESP32 + Impressora Térmica)
+
+Plataforma Web (HTML, CSS e JS)
+
+Tecnologias Utilizadas
+Componente	Tecnologia/Ferramenta
+Comunicação	MQTT (broker.hivemq.com)
+Microcontrolador	ESP32 DevKit V1
+Impressão	Impressora térmica Goldem Sky 80mm (ESC/POS via serial)
+App Mobile	IoT MQTT Panel (Android)
+Plataforma Web	HTML, CSS, JavaScript
+Biblioteca MQTT	PubSubClient (Arduino IDE)
+Conexão Web-MQTT	MQTT.js via WebSockets (opcional)
+Banco de Dados	Não utilizado nesta versão
+
+Divisão de Tarefas
+Integrante	Responsabilidades
+
+    Alessandro	
+- Desenvolvimento da interface web (Cozinha, Caixa, Gerência)
+- Testes e validação de pedidos no sistema web
+- Suporte na integração com MQTT
+- Configuração e montagem do app IoT MQTT Panel
+- Criação dos tópicos MQTT e estruturação do JSON
+- Organização do grupo e testes finais
+
+    Kauã
+- Programação do ESP32 para recebimento de mensagens MQTT
+- Configuração da impressora térmica com comandos ESC/POS
+- Testes de impressão e ajustes de formatação
+- Integração geral do sistema (App → Broker → ESP32 → Web)
+

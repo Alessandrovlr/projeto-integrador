@@ -1,0 +1,9 @@
+Atendente (App MQTT Panel)
+        |
+        v
+Broker MQTT (broker.hivemq.com)
+        |
+   +----+-----+
+   |          |
+ESP32       Plataforma Web
+(Impressão) (Visualização)

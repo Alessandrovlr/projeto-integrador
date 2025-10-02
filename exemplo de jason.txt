@@ -1,0 +1,17 @@
+Broker: broker.hivemq.com
+
+Porta: 1883
+
+Topic de publicação: food/pedidos
+
+Exemplo de payload JSON enviado pelo botão de "Enviar Pedido":
+
+{
+  "mesa": 3,
+  "cliente": "João",
+  "itens": [
+    { "nome": "X-Burguer", "qtd": 2, "preco": 15.00 },
+    { "nome": "Refrigerante", "qtd": 1, "preco": 5.00 }
+  ],
+  "total": 35.00
+}
